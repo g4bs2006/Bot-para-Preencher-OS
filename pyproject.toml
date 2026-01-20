@@ -1,0 +1,16 @@
+[project]
+name = "automacao-os-core"
+version = "0.1.0"
+description = "Automation for OS filling"
+requires-python = ">=3.10"
+dependencies = [
+    "playwright",
+    "polars",
+    "loguru",
+    "python-dotenv",
+    "pydantic",
+    "pytest",
+    "fastexcel",
+    "xlsxwriter",
+    "pydantic-settings",
+]
