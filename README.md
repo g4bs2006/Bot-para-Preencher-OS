@@ -24,7 +24,7 @@ playwright install chromium
 
 3. Configuração de Ambiente
 Crie um arquivo chamado '.env' na raiz do projeto e insira suas credenciais:
-NEOVERO_URL="https://neovero.orbis.com.br"
+NEOVERO_URL="https://orbis.neovero.com/login"
 NEOVERO_USER="seu_usuario"
 NEOVERO_PASS="sua_senha"
 
