@@ -13,23 +13,6 @@ Este projeto consiste em uma solução de Engenharia de Automação para abertur
 4. Estratégia "Terra Arrasada" (Stability): Para evitar vazamento de contexto e erros de sessão entre execuções, o sistema realiza um reload forçado da página (F5) e limpeza de memória após cada transação, garantindo um ambiente limpo para a próxima O.S.
 5. Tipagem e Validação: Uso do Pydantic para validação rigorosa dos dados de entrada antes da execução do navegador.
 
-## Estrutura do Projeto
-
-automacao-os-core/
-├── data/
-│   ├── input/              # Local para a planilha 'dados.xlsx'
-│   └── logs/               # Screenshots de erro e arquivos de log
-├── src/
-│   ├── config/             # Gerenciamento de variáveis de ambiente (.env)
-│   ├── core/               # Configuração do Browser e Exceptions
-│   ├── pages/              # Classes POM (Login, Menu, Equipment, OS)
-│   ├── services/           # Parsers, Leitura de Excel e Lógica de Negócio
-│   └── main.py             # Entrypoint (Orquestrador)
-├── tests/                  # Testes unitários com Pytest
-├── .env                    # Arquivo de credenciais (Gitignored)
-└── requirements.txt        # Dependências do projeto
-
-## Instalação e Configuração
 
 1. Pré-requisitos
 Certifique-se de ter o Python 3.10+ instalado.
@@ -44,7 +27,6 @@ Crie um arquivo chamado '.env' na raiz do projeto e insira suas credenciais:
 NEOVERO_URL="https://neovero.orbis.com.br"
 NEOVERO_USER="seu_usuario"
 NEOVERO_PASS="sua_senha"
-HEADLESS_MODE=False
 
 ## Execução
 
