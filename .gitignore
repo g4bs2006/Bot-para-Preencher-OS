@@ -48,3 +48,9 @@ blob-report/
 .idea/
 *.swp
 *.swo
+
+# Local Data and Logs
+logs/
+data/
+execution.log
+

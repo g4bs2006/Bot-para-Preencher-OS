@@ -1,0 +1,6 @@
+playwright
+pydantic-settings
+loguru
+polars
+fastexcel
+openpyxl
