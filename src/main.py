@@ -34,7 +34,7 @@ async def run_automation():
 
     # 2. Setup Browser
     browser_manager = BrowserManager()
-    page = await browser_manager.start_browser(headless=settings.HEADLESS)
+    page = await browser_manager.start_browser()
     
     # Injeta script para prevenir roubo de foco
     await page.add_init_script("window.focus = function() { return false; }")

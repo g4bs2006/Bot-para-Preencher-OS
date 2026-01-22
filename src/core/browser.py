@@ -12,14 +12,14 @@ class BrowserManager:
             cls._instance = super(BrowserManager, cls).__new__(cls)
         return cls._instance
 
-    async def start_browser(self, headless: bool = False) -> Page:
+    async def start_browser(self) -> Page:
         """Inicia o browser e retorna uma página context."""
         if self._playwright is None:
             self._playwright = await async_playwright().start()
         
         if self._browser is None:
-            self._browser = await self._playwright.chromium.launch(headless=headless)
-            logger.info(f"Browser iniciado (Headless: {headless})")
+            self._browser = await self._playwright.chromium.launch(headless=False)
+            logger.info("Browser iniciado")
             
         context = await self._browser.new_context()
         page = await context.new_page()
